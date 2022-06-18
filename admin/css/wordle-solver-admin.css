@@ -1,0 +1,127 @@
+/**
+ * All of the CSS for your admin-specific functionality should be
+ * included in this file.
+ */
+ #wordle_words {
+    margin: 30px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+#wordle_words input{
+    width: fit-content;
+}
+div#word_adding_box h3 {
+    display: flex;
+    align-items: baseline;
+    gap: 50px;
+}
+i.mce-ico.mce-i-wordle-mce-icon {
+    background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB2ZXJzaW9uPSIxLjEiIHg9IjBweCIgeT0iMHB4IiB2aWV3Qm94PSIwIDAgMTAwMCAxMDAwIiBlbmFibGUtYmFja2dyb3VuZD0ibmV3IDAgMCAxMDAwIDEwMDAiIHhtbDpzcGFjZT0icHJlc2VydmUiIGZpbGw9IiM1MDU3NWUiIHdpZHRoPSIzMnB4IiBoZWlnaHQ9IjMycHgiPiA8bWV0YWRhdGE+IFN2ZyBWZWN0b3IgSWNvbnMgOiBodHRwOi8vd3d3Lm9ubGluZXdlYmZvbnRzLmNvbS9pY29uIDwvbWV0YWRhdGE+IDxnPjxwYXRoIGQ9Ik05OTAsNjcyLjZjMCwyOS43LTguOCw1NC40LTI2LjQsNzQuMmMtMTcuNiwxOS44LTQxLjgsMjkuNy03Mi44LDI5LjdjLTE2LjIsMC0zMS4zLTMuMy00NS40LTkuOWMtMTQuMS02LjYtMjUuNy0xMy41LTM0LjgtMjAuOHMtMjAuNC0xNC4yLTMzLjgtMjAuOGMtMTMuNC02LjYtMjcuMS05LjktNDEuMS05LjljLTQzLjYsMC02NS40LDIyLjctNjUuNCw2OC4yYzAsMTQuNSwzLjIsMzUuOSw5LjUsNjQuM2M2LjMsMjguMyw5LjEsNDkuNCw4LjQsNjMuM3YzYy04LjQsMC0xNC44LDAtMTksMGMtMTMuNCwxLjMtMzIuMywzLjYtNTcsNi45Yy0yNC42LDMuMy00Ny41LDUuNi02OC42LDYuOWMtMjEuMSwxLjMtNDAuNCwyLjMtNTgsM2MtMjMuOSwwLTQ0LTQuOS02MC4xLTE0LjhjLTE2LjItOS45LTI0LjMtMjUuNC0yNC4zLTQ2LjVjMC0xMy4yLDMuMi0yNiw5LjUtMzguNnMxNC4xLTIzLjEsMjMuMi0zMS42YzkuMS04LjYsMTYuNS0xOS40LDIyLjItMzIuNmM1LjYtMTMuMiw4LjgtMjcuNCw5LjUtNDIuNWMwLTI5LTEwLjUtNTEuOC0zMS42LTY4LjJjLTIxLjEtMTYuNS00Ny41LTI0LjctNzkuMS0yNC43Yy0zMy4xLDAtNjEuMiw4LjYtODQuNCwyNS43Yy0yMy4yLDE3LjEtMzQuOCw0MC41LTM0LjgsNzAuMmMwLDE1LjgsMy4yLDMxLDkuNSw0NS41YzYuMywxNC41LDEyLjcsMjYuNCwxOSwzNS42czEzLDE5LjEsMjAsMjkuN2M3LDEwLjYsOS44LDE5LjgsOC40LDI3LjdjMCwxNi41LTguOCwzMy0yNi40LDQ5LjRjLTE0LjgsMTIuNS0zOCwxOC44LTY5LjYsMTguOGMtMzcuMywwLTg1LjEtNC4zLTE0My41LTEyLjljLTMuNS0wLjctOS4xLTEuMy0xNi45LTJjLTcuNy0wLjctMTMtMS43LTE1LjgtM2wtNy40LTFjLTAuNywwLTEuNCwwLTIuMSwwcy0xLjEtMC4zLTEuMS0xVjM0OS4yYzAuNywwLDQuMiwwLjcsMTAuNSwyYzYuMywxLjMsMTMsMiwyMCwyYzcsMCwxMS4zLDAuNywxMi43LDJjNTguNCw5LjIsMTA2LjIsMTMuOCwxNDMuNSwxMy44YzMxLjYsMCw1NC45LTYuNiw2OS42LTE5LjhjMTcuNi0xNS44LDI2LjQtMzIsMjYuNC00OC41YzAtOC42LTIuOC0xOC4xLTguNC0yOC43Yy01LjYtMTAuNS0xMi4zLTIwLjEtMjAtMjguN2MtNy43LTguNi0xNC4xLTIwLjQtMTktMzUuNmMtNC45LTE1LjItOC4xLTMwLjMtOS41LTQ1LjVjMC0zMC4zLDExLjYtNTQuMSwzNC44LTcxLjJjMjMuMi0xNy4xLDUxLjctMjUuNCw4NS40LTI0LjdjMzAuOSwwLDU3LDguMiw3OC4xLDI0LjdjMjEuMSwxNi41LDMxLjYsMzkuMiwzMS42LDY4LjJjMCwxNS4yLTMuMiwyOS4zLTkuNSw0Mi41Yy02LjMsMTMuMi0xMy43LDI0LjEtMjIuMiwzMi42Yy04LjQsOC42LTE2LjIsMTguOC0yMy4yLDMwLjdzLTEwLjIsMjUuMS05LjUsMzkuNmMwLDIxLjEsOC4xLDM2LjYsMjQuMyw0Ni41YzE2LjIsOS45LDM2LjIsMTQuNSw2MC4xLDEzLjhjMjUuMywwLDYwLjgtMi42LDEwNi41LTcuOWM0NS43LTUuMyw3Ny43LTguMiw5Ni04Ljl2MWMtMC43LDAuNy0xLjQsMy42LTIuMSw4LjljLTAuNyw1LjMtMS44LDExLjUtMy4yLDE4LjhzLTIuMSwxMS4yLTIuMSwxMS45Yy05LjEsNTUuNC0xMy43LDEwMC41LTEzLjcsMTM1LjVjMCwyOS43LDYuNyw1MS4xLDIwLDY0LjNjMTcuNiwxNy4xLDM1LjIsMjUuNyw1Mi43LDI1LjdjOC40LDAsMTguMy0yLjYsMjkuNS03LjljMTEuMy01LjMsMjEuOC0xMS41LDMxLjYtMTguOHMyMi41LTEzLjUsMzgtMTguOGMxNS41LTUuMywzMS42LTcuOSw0OC41LTcuOWMzMi40LDAsNTcuMywxMC45LDc0LjksMzIuNlM5ODkuMyw2NDEuNiw5OTAsNjcyLjZMOTkwLDY3Mi42eiIvPjwvZz4gPC9zdmc+);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+div#wordle-setup-page {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: #0000007d;
+    z-index: 999999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+div#wordle-setup-page .wordle__contents {
+    width: 50%;
+    background: #fff;
+}
+div#wordle-setup-page .wordle__contents .wordle__heading {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    position: relative;
+    background: #d7d7d7;
+}
+div#wordle-setup-page .wordle__contents .wordle__heading h3{
+    margin: 0;
+}
+span.close_wordle_window {
+    position: absolute;
+    right: 10px;
+    font-size: 24px;
+    transform: rotate(45deg);
+    font-weight: bold;
+    cursor: pointer;
+    user-select: none;
+}
+div#wordle-setup-page .wordle__contents .wordle_settings {
+    margin: 10px;
+    max-height: 60vh;
+    overflow-y: auto;
+    border: 1px solid #ddd;
+}
+div#wordle-setup-page .wordle__contents .wordle_settings .wordle_row {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    padding: 10px;
+}
+div#wordle-setup-page .wordle__contents .wordle_settings .wordle_row .label {
+    width: 40%;
+}
+div#wordle-setup-page .wordle__contents .wordle_settings .wordle_row .wordle_input {
+    width: 60%;
+}
+.wordle_row:nth-child(even) {
+    background-color: #f9f9f9;
+}
+div#wordle-setup-page .wordle__contents .wordle_settings .wordle_row .label p {
+    margin: 0;
+    font-weight: bold;
+}
+div#wordle-setup-page .wordle__contents .wordle_settings .wordle_row .label span {
+    color: #b9b9b9;
+}
+.wordle_input_box {
+    display: flex;
+    gap: 5px;
+}
+.wordle_input_box input {
+    padding: 10px;
+    width: 50px;
+    height: 50px;
+    border-radius: 3px;
+    text-align: center;
+    text-transform: uppercase;
+}
+input[name="incorrect_latters"] {
+    text-transform: uppercase;
+}
+.wordle_row input[type="text"]{
+    border: 1px solid #ddd;
+}
+.wordle_row input:focus{
+    outline: none;
+    box-shadow: none;
+}
+.wordle_row input::placeholder{
+    color: #b7b7b7;
+}
+.wordlenone{
+    display: none !important;
+}
+
+.wordleAlert p {
+    margin: 0;
+    font-weight: bold;
+}
+
+.wordleAlert {
+    margin-bottom: 10px;
+    width: 200px;
+    padding: 3px 10px;
+    border-left: 4px solid red;
+    background: #ff000014;
+}

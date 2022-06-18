@@ -1,0 +1,193 @@
+/**
+ * All of the CSS for your public-facing functionality should be
+ * included in this file.
+ */
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100;200;300;500;600;700;800;900&family=Roboto:wght@100;300;400;500;700&display=swap');
+
+
+#wordle_wrapper * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#wordle_wrapper.default {
+    max-width: 390px;
+    margin: 0 auto;
+}
+
+#wordle_wrapper>#wordle_filter_bar_wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    text-align: center;
+}
+
+#wordle_wrapper>#wordle_preview>.counted_charecter_preview>h2,
+#wordle_wrapper>#wordle_preview>.recommended_words_wrapper>h2,
+#wordle_wrapper>#wordle_preview>#potential_answers_wrapper>#potential_answers_heading,
+#wordle_wrapper>#wordle_filter_bar_wrapper>.wordle_filter_bar>h2 {
+    font-size: 18px;
+    font-family: 'Roboto', sans-serif;
+    color: #3a3a3c;
+    font-weight: 600;
+    margin-bottom: 5px;
+    text-align: center;
+}
+
+.wordle_filter_bar.correct .wordle_filter_boxs, .wordle_filter_bar.misplaced .wordle_filter_boxs {
+    display: inline-flex;
+    gap: 20px;
+}
+
+#wordle_wrapper>#wordle_filter_bar_wrapper>.wordle_filter_bar>.wordle_filter_boxs input[type=text] {
+    all: unset;
+    color: #fff;
+    height: 60px !important;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+    border: 1px solid #ced4da; 
+    border-radius: 2px;
+    outline: none;
+    font-size: 20px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.wordle_filter_bar.correct .wordle_filter_boxs input, .wordle_filter_bar.misplaced .wordle_filter_boxs input {
+    width: 60px !important;
+}
+.wordle_filter_bar.incorrect .wordle_filter_boxs input {
+    width: 100% !important;
+}
+
+.wordle_filter_bar.correct .wordle_filter_boxs input{
+    background-color: var(--corr_bg) !important;
+}
+.wordle_filter_bar.misplaced .wordle_filter_boxs input{
+    background-color: var(--miss_bg) !important;
+}
+.wordle_filter_bar.incorrect .wordle_filter_boxs input{
+    background-color: var(--inc_bg) !important;
+}
+
+#wordle_wrapper>#wordle_filter_bar_wrapper>.wordle_filter_bar>.wordle_filter_boxs input[type=text]:focus {
+    box-shadow: 0 0 0 5px #e0f7ff;
+    transition: .1s;
+}
+input.search_bar[readonly]:focus {
+    box-shadow: unset !important;
+}
+#wordle_wrapper>#wordle_preview {
+    width: 100%;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+#wordle_wrapper>#wordle_preview>#potential_answers_wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+#wordle_wrapper>#wordle_preview>#potential_answers_wrapper>.potential_answers {
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+#wordle_wrapper>#wordle_preview>.counted_charecter_preview>.common_letters>.char_prev,
+#wordle_wrapper>#wordle_preview>.recommended_words_wrapper>.recommended_words>.wordle_word,
+#wordle_wrapper>#wordle_preview>#potential_answers_wrapper>.potential_answers>.wordle_word {
+    display: inline-block;
+    font-family: 'Roboto', sans-serif;
+    color: #3a3a3c;
+    font-size: 14px;
+    font-weight: 400;
+    margin: 5px 0;
+    margin-right: 15px;
+    text-transform: uppercase;
+}
+
+#wordle_wrapper>div.empty_notice {
+    margin: 20px 0;
+}
+
+.empty_text {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    font-size: 14px;
+    text-align: center;
+}
+
+#wordle_wrapper>#wordle_preview>#potential_answers_wrapper>#potential_answer_limiter {
+    all: unset;
+    font-family: 'Roboto', sans-serif;
+    color: #3a3a3c;
+    font-size: 14px;
+    font-weight: 500;
+    padding: 3px 15px;
+    border: 1px solid #3a3a3c;
+    border-radius: 2px;
+    cursor: pointer;
+}
+#wordle_wrapper>#wordle_preview>#potential_answers_wrapper>#potential_answer_limiter:hover{
+    background: #3a3a3c;
+    color: #fff;
+    transition: .3s;
+    -webkit-transition: .3s;
+    -moz-transition: .3s;
+    -ms-transition: .3s;
+    -o-transition: .3s;
+}
+
+#wordle_wrapper>#wordle_preview>.counted_charecter_preview>.char_prev,
+#wordle_wrapper>#wordle_preview>.recommended_words_wrapper {
+    margin-bottom: 25px;
+}
+
+#wordle_wrapper>#wordle_preview>.counted_charecter_preview>.common_letters>.char_prev,
+#wordle_wrapper>#wordle_preview>.recommended_words_wrapper>.recommended_words>.wordle_word {
+    font-weight: 600;
+
+}
+
+#wordle_wrapper>#wordle_preview>.recommended_words_wrapper>.recommended_words {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+#wordle_wrapper>#wordle_preview>.counted_charecter_preview>.common_letters>.char_prev>span {
+    font-weight: 400;
+}
+.wordlenone{
+    display: none !important;
+}
+#wordle_filter_bar_wrapper > div.wordle_filter_bar.incorrect > div.wordle_filter_boxs{
+    position: relative;
+}
+.prefix_data{
+    position: absolute;
+    display: inline-flex;
+    height: 100%;
+    align-items: center;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: #fff;
+    background-color: #ffffff1f;
+    text-transform: uppercase;
+    padding: 6px 20px !important;
+}
+
+@media screen and (max-width: 460px){
+    .wordle_filter_bar.correct .wordle_filter_boxs, .wordle_filter_bar.misplaced .wordle_filter_boxs{
+        gap: 2%;
+    }
+    .wordle_filter_bar.correct .wordle_filter_boxs input, .wordle_filter_bar.misplaced .wordle_filter_boxs input{
+        width: 100% !important;
+    }
+}
