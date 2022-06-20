@@ -70,7 +70,7 @@ class Wordle_Solver {
 		if ( defined( 'WORDLE_SOLVER_VERSION' ) ) {
 			$this->version = WORDLE_SOLVER_VERSION;
 		} else {
-			$this->version = '1.0.1';
+			$this->version = '1.0.4';
 		}
 		$this->plugin_name = 'wordle-solver';
 

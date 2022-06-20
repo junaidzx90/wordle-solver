@@ -72,3 +72,4 @@
             <div class="common_letters"></div>
         </div>
     </div>
+</div>
